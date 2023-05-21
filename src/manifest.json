@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Book Dumper",
+  "description": "It can dump plain text from websites",
+  "version": "1.0.0",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "background": {
+    "scripts": ["js/default-settings.js", "background_script.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Open Options"
+  },
+  "options_ui": {
+    "page": "options/index.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "unlimitedStorage",
+    "contextMenus",
+    "downloads",
+    "notifications"
+  ]
+}

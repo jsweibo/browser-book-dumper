@@ -1,0 +1,17 @@
+root: true
+globals:
+  notify: readonly
+  DEFAULT_SETTINGS: readonly
+env:
+  browser: true
+  es6: true
+  webextensions: true
+parserOptions:
+  ecmaVersion: 2019
+plugins:
+  - prettier
+rules:
+  prettier/prettier: error
+extends:
+  - eslint:recommended
+  - prettier

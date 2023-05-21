@@ -1,0 +1,78 @@
+form {
+  padding: 0.15rem;
+  font-size: 0.16rem;
+}
+
+.form-field {
+  border: 0.01rem solid #ccc;
+  margin-bottom: 0.15rem;
+  padding: 0.06rem;
+}
+
+.form-field .title {
+  font-weight: bold;
+}
+
+:last-child.form-field {
+  margin-bottom: 0;
+}
+
+.value-field {
+  margin-top: 0.06rem;
+}
+
+.value-field textarea {
+  display: block;
+  box-sizing: border-box;
+  border: 0.01rem solid #ccc;
+  padding: 0.06rem;
+  width: 100%;
+  font-size: 0.16rem;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  flex: 1;
+  height: 0.46rem;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+  box-sizing: border-box;
+  border: 0.01rem solid #ccc;
+  font-size: 0.16rem;
+}
+
+.input-field button {
+  font-size: 0.16rem;
+  width: 0.46rem;
+  height: 0.46rem;
+  padding: 0 0.1rem;
+  border: 0.01rem solid #ccc;
+  margin-left: 0.06rem;
+  cursor: pointer;
+}
+
+.btns-field button {
+  text-align: center;
+  padding: 0;
+  line-height: 0.5rem;
+  border: 0.01rem solid #07c160;
+  display: block;
+  width: 100%;
+  font-size: 0.16rem;
+  cursor: pointer;
+}
+
+.btns-field button:first-child {
+  background-color: #07c160;
+  color: #fff;
+}
+
+.btns-field button:last-child {
+  color: #07c160;
+  margin-top: 0.15rem;
+  background-color: #fff;
+}

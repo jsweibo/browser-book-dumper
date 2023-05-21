@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#root {
+  font-size: 0;
+  max-width: 3.75rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.hint-field {
+  display: none;
+}
+
+.hint-field_visible {
+  display: block;
+}
+
+.mask {
+  width: 100%;
+  max-width: 3.75rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.hint {
+  font-size: 0.16rem;
+  padding: 0.15rem;
+  width: fit-content;
+  max-width: 2rem;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hint_success {
+  background-color: #fff;
+  border: 0.01rem solid #07c160;
+  color: #07c160;
+}
+
+.hint_error {
+  background-color: #fff;
+  border: 0.01rem solid #fa5151;
+  color: #fa5151;
+}

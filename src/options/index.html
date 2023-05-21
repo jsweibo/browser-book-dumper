@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#07c160" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="/js/rem.js"></script>
+    <script defer src="/js/root.js"></script>
+    <script defer src="/js/default-settings.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>Book Dumper Options</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="hint-field">
+        <div class="mask"></div>
+        <div class="hint"></div>
+      </div>
+      <div class="container">
+        <form id="export-settings">
+          <div class="form-field">
+            <div class="title">Export</div>
+            <div class="value-field">
+              <button type="button" id="export-settings">Export</button>
+            </div>
+          </div>
+        </form>
+        <hr />
+        <form id="import-settings">
+          <div class="form-field">
+            <div class="title">Import From Local</div>
+            <div class="value-field">
+              <input type="file" name="settings-file" id="settings-file" />
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="title">Import From Remote</div>
+            <div class="value-field input-field">
+              <input
+                type="url"
+                name="settings-url"
+                id="settings-url"
+                placeholder="URL"
+              />
+              <button type="button">C</button>
+            </div>
+          </div>
+          <div class="btns-field">
+            <button type="submit">Load</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+        <hr />
+        <form id="config">
+          <div class="form-field">
+            <div class="title">Rules</div>
+            <div class="value-field">
+              <textarea
+                name="rules"
+                id="rules"
+                rows="18"
+                placeholder="Dump Rules"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="btns-field">
+            <button type="submit">Save</button>
+            <button type="reset" id="reset-rules">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
